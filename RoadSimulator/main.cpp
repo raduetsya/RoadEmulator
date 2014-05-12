@@ -22,8 +22,8 @@
 #include "sdlcontroller.h"
 
 // Helper classes for Observer & etc
-#include "utils.hpp"
-#include "everyframenotifier.hpp"
+#include "utils.h"
+#include "everyframenotifier.h"
 #include "config.h"
 
 //#include <SDL/SDL.h>

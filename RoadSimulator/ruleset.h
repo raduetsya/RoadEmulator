@@ -6,7 +6,7 @@
 
 #include "rulecond.h"
 
-#include "utils.hpp"
+#include "utils.h"
 
 #include <map>
 #include <stdexcept>

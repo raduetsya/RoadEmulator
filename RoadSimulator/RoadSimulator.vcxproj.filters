@@ -35,9 +35,6 @@
     <ClInclude Include="config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="everyframenotifier.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="iview.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -68,7 +65,10 @@
     <ClInclude Include="stb_truetype.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="utils.hpp">
+    <ClInclude Include="everyframenotifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

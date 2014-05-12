@@ -83,7 +83,7 @@
     <ClInclude Include="car.h" />
     <ClInclude Include="carview.h" />
     <ClInclude Include="config.h" />
-    <ClInclude Include="everyframenotifier.hpp" />
+    <ClInclude Include="everyframenotifier.h" />
     <ClInclude Include="iview.h" />
     <ClInclude Include="keyeventmanager.h" />
     <ClInclude Include="lineview.h" />
@@ -94,7 +94,7 @@
     <ClInclude Include="rulesetview.h" />
     <ClInclude Include="sdlcontroller.h" />
     <ClInclude Include="stb_truetype.h" />
-    <ClInclude Include="utils.hpp" />
+    <ClInclude Include="utils.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="config.txt" />

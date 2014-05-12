@@ -4,8 +4,8 @@
 #include "config.h"
 
 #include "keyeventmanager.h"
-#include "utils.hpp"
-#include "everyframenotifier.hpp"
+#include "utils.h"
+#include "everyframenotifier.h"
 
 #define _USE_MATH_DEFINES
 #include <cmath>

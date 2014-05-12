@@ -2,7 +2,7 @@
 #define SDLCONTROLLER_H
 
 #include "iview.h"
-#include "everyframenotifier.hpp"
+#include "everyframenotifier.h"
 #include "keyeventmanager.h"
 
 class SDLController

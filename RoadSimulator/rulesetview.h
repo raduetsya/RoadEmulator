@@ -3,7 +3,7 @@
 
 #include "ruleset.h"
 #include "iview.h"
-#include "utils.hpp"
+#include "utils.h"
 
 #include <windows.h>
 #include <SDL/SDL.h>
