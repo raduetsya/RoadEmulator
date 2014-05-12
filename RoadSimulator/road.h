@@ -2,6 +2,7 @@
 #define ROAD_H
 
 #include "car.h"
+#include "keyeventmanager.h"
 
 #include <vector>
 
@@ -19,7 +20,8 @@ public:
 };
 
 class Road :
-        public Observable<Road>
+        public Observable<Road>,
+		public Observer<KeyEvent>
 {
 public:
     Road()
@@ -66,6 +68,13 @@ public:
     Car& getCar() {
         return car;
     }
+
+	void update(KeyEvent* ev) {
+        if (ev == nullptr) return;
+		if (ev->stSpaceJustPressed)
+			rightHand = !rightHand;
+		notify();
+	}
 
 private:
     std::vector<int> parts;

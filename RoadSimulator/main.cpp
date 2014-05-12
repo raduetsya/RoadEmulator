@@ -75,6 +75,7 @@ int main(int argc, char *args[])
 		// connect model and controller
 		render.getFrameNotifier().attach(cmodel);
 		render.getKeyListener().addListener(dynamic_cast<Observer<KeyEvent> &>(cmodel));
+		render.getKeyListener().addListener(dynamic_cast<Observer<KeyEvent> &>(rmodel));
 
 		render.gameCycle();
 	} catch(RuleSetView::FontFileNotFound) {
