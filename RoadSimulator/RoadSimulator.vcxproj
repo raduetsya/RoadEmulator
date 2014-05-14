@@ -75,8 +75,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="car.cpp" />
+    <ClCompile Include="carview.cpp" />
     <ClCompile Include="config.cpp" />
+    <ClCompile Include="lineview.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="road.cpp" />
+    <ClCompile Include="roadview.cpp" />
+    <ClCompile Include="ruleset.cpp" />
+    <ClCompile Include="rulesetview.cpp" />
     <ClCompile Include="sdlcontroller.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -93,7 +100,6 @@
     <ClInclude Include="ruleset.h" />
     <ClInclude Include="rulesetview.h" />
     <ClInclude Include="sdlcontroller.h" />
-    <ClInclude Include="stb_truetype.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>
   <ItemGroup>

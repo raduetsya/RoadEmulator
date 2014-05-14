@@ -24,9 +24,8 @@ class Road :
 		public Observer<KeyEvent>
 {
 public:
-    Road()
-    {}
 
+	int getLength() { return parts.size(); }
     void setLength(int length) {
         parts.resize(length);
         notify();
@@ -37,6 +36,7 @@ public:
         notify();
     }
 
+    bool isRightHanded() { return rightHand; }
     void setIfRightHanded(bool rightHand) {
         this->rightHand = rightHand;
         notify();
@@ -48,7 +48,9 @@ public:
         this->height = height;
     }
 
-    int getRoadType(float y) {
+    int getRoad(int pos) { return parts.at(pos); }
+
+	int getRoadType(float y) {
         unsigned int pos = static_cast<int>(y / height * parts.size());
         if (pos >= parts.size()) return 0;
         return parts[pos];
@@ -61,28 +63,13 @@ public:
         throw 0;
     }
 
-    bool isRightHanded() { return rightHand; }
-    int getLength() { return parts.size(); }
-    int getRoad(int pos) { return parts.at(pos); }
-
-    Car& getCar() {
-        return car;
-    }
-
-	void update(KeyEvent* ev) {
-        if (ev == nullptr) return;
-		if (ev->stSpaceJustPressed)
-			rightHand = !rightHand;
-		notify();
-	}
+	void update(KeyEvent* ev);
 
 private:
     std::vector<int> parts;
-    Car car;
     bool rightHand;
 
     float width, height;
-
 };
 
 #endif // ROAD_H

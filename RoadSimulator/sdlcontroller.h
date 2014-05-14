@@ -8,14 +8,11 @@
 class SDLController
 {
 public:
-    SDLController();
+	SDLController();
     ~SDLController();
     void init();
     void gameCycle();
-
-    void addView(IView* view) {
-        views.push_back(view);
-    }
+	void addView(IView* view);
 
     KeyEventManager& getKeyListener() {
         return keyMgr;
@@ -33,6 +30,7 @@ private:
     EveryFrameNotifier frameListener;
 
     SDL_Surface* screen;
+	bool inited;
 };
 
 #endif // SDLCONTROLLER_H

@@ -6,8 +6,20 @@
 #include <SDL/SDL.h>
 #include <GL/gl.h>
 
-SDLController::SDLController()
+SDLController::SDLController() :
+	inited(false) {}
+
+SDLController::~SDLController()
 {
+	if (inited)
+	{
+		SDL_FreeSurface(screen);
+		SDL_Quit();
+	}
+}
+
+void SDLController::addView(IView* view) {
+    views.push_back(view);
 }
 
 void SDLController::init()
@@ -38,11 +50,9 @@ void SDLController::init()
     glHint(GL_LINE_SMOOTH_HINT, GL_NICEST);
 
     glLoadIdentity();
-
-
-
     glClearColor(1, 1, 1, 1);
 
+	inited = true;
 }
 
 void SDLController::gameCycle()
@@ -88,10 +98,4 @@ void SDLController::gameCycle()
     }
 
 
-}
-
-SDLController::~SDLController()
-{
-    SDL_FreeSurface(screen);
-    SDL_Quit();
 }
