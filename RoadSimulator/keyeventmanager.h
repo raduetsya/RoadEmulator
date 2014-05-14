@@ -3,7 +3,7 @@
 
 #include <SDL/SDL.h>
 
-#include "utils.h"
+#include "observer.h"
 
 struct KeyEvent :
         public Observable<KeyEvent>

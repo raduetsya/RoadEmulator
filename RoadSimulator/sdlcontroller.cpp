@@ -6,8 +6,8 @@
 #include <SDL/SDL.h>
 #include <GL/gl.h>
 
-SDLController::SDLController() :
-	inited(false) {}
+SDLController::SDLController(std::string windowTitle) :
+	inited(false), windowTitle(windowTitle) {}
 
 SDLController::~SDLController()
 {
@@ -26,7 +26,7 @@ void SDLController::init()
 {
     SDL_Init( SDL_INIT_EVERYTHING );
 
-    SDL_WM_SetCaption("Road Emulator", NULL);
+    SDL_WM_SetCaption(windowTitle.c_str(), NULL);
     screen = SDL_SetVideoMode(
                 Config::get().data.SCREEN_WIDTH,
                 Config::get().data.SCREEN_HEIGHT,

@@ -100,7 +100,7 @@
     <ClInclude Include="ruleset.h" />
     <ClInclude Include="rulesetview.h" />
     <ClInclude Include="sdlcontroller.h" />
-    <ClInclude Include="utils.h" />
+    <ClInclude Include="observer.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="config.txt" />

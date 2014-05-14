@@ -22,12 +22,11 @@
 #include "sdlcontroller.h"
 
 // Helper classes for Observer & etc
-#include "utils.h"
+#include "observer.h"
 #include "everyframenotifier.h"
 #include "config.h"
 
-//#include <SDL/SDL.h>
-//#undef main
+#define APP_NAME "Road Emulator"
 
 int main(int argc, char *args[])
 {
@@ -35,7 +34,7 @@ int main(int argc, char *args[])
 	{
 		Config::get().loadConf("config.txt");
 
-		SDLController render;
+		SDLController render(APP_NAME);
 		render.init();
 
 		// create models

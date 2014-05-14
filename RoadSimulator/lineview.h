@@ -2,7 +2,7 @@
 #define LINEVIEW_H
 
 #include "iview.h"
-#include "utils.h"
+#include "observer.h"
 
 #include <windows.h>
 #include <GL/gl.h>

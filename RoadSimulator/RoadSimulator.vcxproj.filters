@@ -86,7 +86,7 @@
     <ClInclude Include="everyframenotifier.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="utils.h">
+    <ClInclude Include="observer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

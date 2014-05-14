@@ -1,7 +1,7 @@
 #ifndef EVERYFRAMENOTIFIER_H
 #define EVERYFRAMENOTIFIER_H
 
-#include "utils.h"
+#include "observer.h"
 
 class EveryFrameNotifier :
         public Observable<EveryFrameNotifier>

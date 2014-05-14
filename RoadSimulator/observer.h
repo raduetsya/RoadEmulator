@@ -1,11 +1,5 @@
-#ifndef UTILS_H
-#define UTILS_H
-
-#define APP_NAME "RoadEmulator"
-
-/*
- * Observer pattern
- */
+#ifndef OBSERVER_H
+#define OBSERVER_H
 
 #include <list>
 
@@ -45,4 +39,4 @@ private:
     std::list<Observer<T> *> _observersList;
 };
 
-#endif // UTILS_HPP
+#endif // OBSERVER_HPP

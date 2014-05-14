@@ -8,7 +8,7 @@
 class SDLController
 {
 public:
-	SDLController();
+	SDLController(std::string windowTitle);
     ~SDLController();
     void init();
     void gameCycle();
@@ -30,6 +30,7 @@ private:
     EveryFrameNotifier frameListener;
 
     SDL_Surface* screen;
+	std::string windowTitle;
 	bool inited;
 };
 
