@@ -9,7 +9,7 @@ class SDLController
 {
 public:
 	SDLController(std::string windowTitle);
-    ~SDLController();
+    virtual ~SDLController();
     void init();
     void gameCycle();
 	void addView(IView* view);

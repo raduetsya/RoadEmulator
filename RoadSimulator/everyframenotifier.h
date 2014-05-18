@@ -10,6 +10,8 @@ public:
     float frameDelay;
 	EveryFrameNotifier() :
 		frameDelay(0) {}
+
+	virtual ~EveryFrameNotifier() {};
 };
 
 #endif // EVERYFRAMENOTIFIER_HPP

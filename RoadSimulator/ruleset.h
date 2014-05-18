@@ -18,7 +18,7 @@ class RuleSet :
 {
 public:
     RuleSet();
-    ~RuleSet();
+    virtual ~RuleSet();
 
     enum ViolationType {
         OK,

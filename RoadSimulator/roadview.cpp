@@ -5,6 +5,9 @@ RoadView::RoadView(float left, float top, float right, float bottom)
     setWindow(left,top,right,bottom);
 }
 
+RoadView::~RoadView()
+{}
+
 void RoadView::update(Road *road) {
     if (road == nullptr) return;
 

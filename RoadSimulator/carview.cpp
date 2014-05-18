@@ -1,5 +1,8 @@
 #include "carview.h"
 
+CarView::~CarView()
+{}
+
 CarView::CarView(float size, LineView* parent) :
     size(size)
 {

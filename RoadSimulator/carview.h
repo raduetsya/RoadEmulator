@@ -10,6 +10,7 @@ class CarView :
         public Observer<Car>
 {
 public:
+	virtual ~CarView();
     CarView(float size, LineView* parent = nullptr);
     void update(Car *ev);
 

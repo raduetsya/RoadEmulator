@@ -25,6 +25,8 @@ class Road :
 {
 public:
 
+	virtual ~Road();
+
 	int getLength() { return parts.size(); }
     void setLength(int length) {
         parts.resize(length);

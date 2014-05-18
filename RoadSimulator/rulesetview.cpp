@@ -16,6 +16,9 @@ RuleSetView::RuleSetView(float left, float top)
     initFont("C:\\Windows\\Fonts\\couri.ttf");
 }
 
+RuleSetView::~RuleSetView()
+{}
+
 void RuleSetView::draw()
 {
     int ypos = 0;

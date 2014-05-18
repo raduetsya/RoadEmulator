@@ -13,7 +13,7 @@ class Car :
 public:
     Car();
 	Car(const Car& other);
-    ~Car();
+    virtual ~Car();
 
     Car doTick(float delay);
     void update(KeyEvent* ev);

@@ -11,6 +11,7 @@ class RoadView :
 {
 public:
     RoadView(float left, float top, float right, float bottom);
+	virtual ~RoadView();
     void update(Road *road);
 private:
     void drawArrow(float x, float y, bool up);

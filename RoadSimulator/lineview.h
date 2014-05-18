@@ -15,6 +15,7 @@
 class LineView : public IView
 {
 public:
+	virtual ~LineView();
     void draw();
 
 protected:

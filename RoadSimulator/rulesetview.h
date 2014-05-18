@@ -17,6 +17,7 @@ class RuleSetView :
 {
 public:
     RuleSetView(float left, float top);
+	virtual ~RuleSetView();
     void draw();
     void update(RuleSet *ev);
 

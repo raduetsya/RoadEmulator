@@ -20,6 +20,8 @@ struct RuleSetQuickParams {
 
 class RuleStateCond {
 public:
+	virtual ~RuleStateCond() {};
+
     virtual RuleStateCond* copy() = 0;
 
     bool check(RuleSetQuickParams& obj) {

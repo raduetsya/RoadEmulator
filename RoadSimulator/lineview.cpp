@@ -1,5 +1,8 @@
 #include "lineview.h"
 
+LineView::~LineView()
+{}
+
 void LineView::draw() {
     glLineWidth(1.0f);
     glColor4f (0.0, 0.0, 0.0, 1.0f);

@@ -19,13 +19,16 @@ struct KeyEvent :
         stTurnRight(false),
 		stSpaceJustPressed(false)
     {}
+
+	virtual ~KeyEvent() {};
 };
 
 class KeyEventManager
 {
 public:
-    KeyEventManager() {
-    }
+    KeyEventManager() {}
+
+	virtual ~KeyEventManager() {}
 
     template <class T>
     void addListener(Observer<T>& obs) {
