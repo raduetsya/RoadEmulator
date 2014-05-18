@@ -183,4 +183,3 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
-/ReleaseOutput/stdout.txt

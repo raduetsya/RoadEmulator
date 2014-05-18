@@ -1,7 +1,6 @@
 #ifndef RULECOND_H
 #define RULECOND_H
 
-#include <iostream>
 #include <cmath>
 
 struct RuleSetQuickParams {
